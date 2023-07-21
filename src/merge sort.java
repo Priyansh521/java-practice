@@ -21,7 +21,7 @@ public class merge_sort {
         }
         //for copying the merged array into the original array
         for (int i = 0, j = si; i<merged.length; i++, j++ ){
-            arr[i] = merged[j];
+            arr[j] = merged[i++];
         }
     }
     public static void divide(int[] arr, int si, int ei){
