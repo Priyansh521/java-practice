@@ -28,7 +28,7 @@ public class merge_sort {
         if (si>=ei){
             return;
         }
-        int mid = si+(ei=si)/2;
+        int mid = si+(ei-si)/2;
         divide(arr, si, mid);
         divide(arr, mid+1, ei);
         conquer(arr, si, mid, ei);
