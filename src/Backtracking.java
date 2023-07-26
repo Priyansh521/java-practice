@@ -4,6 +4,7 @@ public class backtracking {
             System.out.println(perm);
             return;
         }
+        //tracking the path we came from to get the solution if it's not the desired one
         for (int i = 0; i<x.length(); i++){
             char currChar = x.charAt(i);
             String newStr = x.substring(0,i) + x.substring(i+1);
